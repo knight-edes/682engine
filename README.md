@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PRINCE encrypt/decrypt engine — Vivado flow (ZedBoard, xc7z020clg484-1)
 
 ## Layout
@@ -29,3 +30,6 @@ next step is a pipeline register after the middle layer.
 
 ## Regenerate vectors (optional)
     python model/prince_ref.py sim/vectors_rand.mem 256
+=======
+# 682engine
+>>>>>>> fc247edb30fdddbdd2722932b834a95428e0fd23
