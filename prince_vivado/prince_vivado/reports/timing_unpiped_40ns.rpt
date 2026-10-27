@@ -1,0 +1,1593 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Oct 27 18:16:10 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/reports/timing_unpiped_40ns.rpt -max_paths 10
+| Design       : prince_top
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (195)
+6. checking no_output_delay (65)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (195)
+--------------------------------
+ There are 195 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (65)
+--------------------------------
+ There are 65 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     10.588        0.000                      0                  129        0.293        0.000                      0                  129       19.500        0.000                       0                   322  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 20.000}     40.000          25.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                10.588        0.000                      0                  129        0.293        0.000                      0                  129       19.500        0.000                       0                   322  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack       10.588ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.293ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       19.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             10.588ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[52]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        29.313ns  (logic 6.182ns (21.090%)  route 23.131ns (78.910%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.141ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.490ns = ( 41.490 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.106    18.629    u_core/r6/m[45]
+    SLICE_X16Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.960 r  u_core/r6/dout[63]_i_462/O
+                         net (fo=3, routed)           0.950    19.910    u_core/r1/u_s/g_sb[7].u_sb/a[16]
+    SLICE_X13Y14         LUT3 (Prop_lut3_I1_O)        0.152    20.062 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_391/O
+                         net (fo=4, routed)           0.840    20.902    u_core/r7/m[44]
+    SLICE_X13Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.234 r  u_core/r7/dout[63]_i_311/O
+                         net (fo=3, routed)           0.947    22.181    u_core/r1/u_s/g_sb[15].u_sb/a_13[18]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I1_O)        0.150    22.331 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_222/O
+                         net (fo=4, routed)           0.875    23.206    u_core/r8/m[42]
+    SLICE_X14Y18         LUT5 (Prop_lut5_I1_O)        0.348    23.554 r  u_core/r8/dout[63]_i_151/O
+                         net (fo=3, routed)           0.776    24.330    u_core/r1/u_s/g_sb[3].u_sb/a_14[13]
+    SLICE_X15Y19         LUT3 (Prop_lut3_I2_O)        0.150    24.480 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_83/O
+                         net (fo=4, routed)           1.233    25.713    u_core/r9/m[17]
+    SLICE_X25Y19         LUT5 (Prop_lut5_I1_O)        0.326    26.039 r  u_core/r9/dout[63]_i_40/O
+                         net (fo=3, routed)           1.007    27.046    u_core/r1/u_s/g_sb[3].u_sb/a_15[10]
+    SLICE_X25Y20         LUT3 (Prop_lut3_I0_O)        0.152    27.198 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_20/O
+                         net (fo=4, routed)           0.738    27.935    u_core/r10/m[34]
+    SLICE_X24Y19         LUT5 (Prop_lut5_I3_O)        0.332    28.267 r  u_core/r10/dout[63]_i_6/O
+                         net (fo=3, routed)           1.012    29.279    u_core/r1/u_s/g_sb[3].u_sb/a_16[19]
+    SLICE_X24Y14         LUT3 (Prop_lut3_I0_O)        0.152    29.431 r  u_core/r1/u_s/g_sb[3].u_sb/dout[55]_i_2/O
+                         net (fo=4, routed)           1.302    30.733    u_core/r1/u_s/g_sb[3].u_sb/r10/m[55]
+    SLICE_X32Y13         LUT6 (Prop_lut6_I1_O)        0.326    31.059 r  u_core/r1/u_s/g_sb[3].u_sb/dout[52]_i_1/O
+                         net (fo=1, routed)           0.000    31.059    dout0[52]
+    SLICE_X32Y13         FDRE                                         r  dout_reg[52]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.490    41.490    clk
+    SLICE_X32Y13         FDRE                                         r  dout_reg[52]/C
+                         clock pessimism              0.115    41.605    
+                         clock uncertainty           -0.035    41.570    
+    SLICE_X32Y13         FDRE (Setup_fdre_C_D)        0.077    41.647    dout_reg[52]
+  -------------------------------------------------------------------
+                         required time                         41.647    
+                         arrival time                         -31.059    
+  -------------------------------------------------------------------
+                         slack                                 10.588    
+
+Slack (MET) :             10.682ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[53]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        29.223ns  (logic 6.182ns (21.155%)  route 23.041ns (78.845%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.141ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.490ns = ( 41.490 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.106    18.629    u_core/r6/m[45]
+    SLICE_X16Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.960 r  u_core/r6/dout[63]_i_462/O
+                         net (fo=3, routed)           0.950    19.910    u_core/r1/u_s/g_sb[7].u_sb/a[16]
+    SLICE_X13Y14         LUT3 (Prop_lut3_I1_O)        0.152    20.062 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_391/O
+                         net (fo=4, routed)           0.840    20.902    u_core/r7/m[44]
+    SLICE_X13Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.234 r  u_core/r7/dout[63]_i_311/O
+                         net (fo=3, routed)           0.947    22.181    u_core/r1/u_s/g_sb[15].u_sb/a_13[18]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I1_O)        0.150    22.331 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_222/O
+                         net (fo=4, routed)           0.875    23.206    u_core/r8/m[42]
+    SLICE_X14Y18         LUT5 (Prop_lut5_I1_O)        0.348    23.554 r  u_core/r8/dout[63]_i_151/O
+                         net (fo=3, routed)           0.776    24.330    u_core/r1/u_s/g_sb[3].u_sb/a_14[13]
+    SLICE_X15Y19         LUT3 (Prop_lut3_I2_O)        0.150    24.480 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_83/O
+                         net (fo=4, routed)           1.233    25.713    u_core/r9/m[17]
+    SLICE_X25Y19         LUT5 (Prop_lut5_I1_O)        0.326    26.039 r  u_core/r9/dout[63]_i_40/O
+                         net (fo=3, routed)           1.007    27.046    u_core/r1/u_s/g_sb[3].u_sb/a_15[10]
+    SLICE_X25Y20         LUT3 (Prop_lut3_I0_O)        0.152    27.198 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_20/O
+                         net (fo=4, routed)           0.738    27.935    u_core/r10/m[34]
+    SLICE_X24Y19         LUT5 (Prop_lut5_I3_O)        0.332    28.267 r  u_core/r10/dout[63]_i_6/O
+                         net (fo=3, routed)           1.012    29.279    u_core/r1/u_s/g_sb[3].u_sb/a_16[19]
+    SLICE_X24Y14         LUT3 (Prop_lut3_I0_O)        0.152    29.431 r  u_core/r1/u_s/g_sb[3].u_sb/dout[55]_i_2/O
+                         net (fo=4, routed)           1.212    30.643    u_core/r1/u_s/g_sb[3].u_sb/r10/m[55]
+    SLICE_X32Y13         LUT6 (Prop_lut6_I1_O)        0.326    30.969 r  u_core/r1/u_s/g_sb[3].u_sb/dout[53]_i_1/O
+                         net (fo=1, routed)           0.000    30.969    dout0[53]
+    SLICE_X32Y13         FDRE                                         r  dout_reg[53]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.490    41.490    clk
+    SLICE_X32Y13         FDRE                                         r  dout_reg[53]/C
+                         clock pessimism              0.115    41.605    
+                         clock uncertainty           -0.035    41.570    
+    SLICE_X32Y13         FDRE (Setup_fdre_C_D)        0.081    41.651    dout_reg[53]
+  -------------------------------------------------------------------
+                         required time                         41.651    
+                         arrival time                         -30.969    
+  -------------------------------------------------------------------
+                         slack                                 10.682    
+
+Slack (MET) :             10.804ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[55]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        29.099ns  (logic 5.950ns (20.447%)  route 23.149ns (79.553%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.141ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.490ns = ( 41.490 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.106    18.629    u_core/r6/m[45]
+    SLICE_X16Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.960 r  u_core/r6/dout[63]_i_462/O
+                         net (fo=3, routed)           0.950    19.910    u_core/r1/u_s/g_sb[7].u_sb/a[16]
+    SLICE_X13Y14         LUT3 (Prop_lut3_I1_O)        0.152    20.062 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_391/O
+                         net (fo=4, routed)           0.840    20.902    u_core/r7/m[44]
+    SLICE_X13Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.234 r  u_core/r7/dout[63]_i_311/O
+                         net (fo=3, routed)           0.947    22.181    u_core/r1/u_s/g_sb[15].u_sb/a_13[18]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I1_O)        0.150    22.331 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_222/O
+                         net (fo=4, routed)           0.875    23.206    u_core/r8/m[42]
+    SLICE_X14Y18         LUT5 (Prop_lut5_I1_O)        0.348    23.554 r  u_core/r8/dout[63]_i_151/O
+                         net (fo=3, routed)           0.776    24.330    u_core/r1/u_s/g_sb[3].u_sb/a_14[13]
+    SLICE_X15Y19         LUT3 (Prop_lut3_I1_O)        0.124    24.454 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_111/O
+                         net (fo=4, routed)           1.043    25.498    u_core/r9/m[25]
+    SLICE_X22Y20         LUT5 (Prop_lut5_I2_O)        0.124    25.622 r  u_core/r9/dout[63]_i_51/O
+                         net (fo=3, routed)           0.862    26.483    u_core/r1/u_s/g_sb[11].u_sb/a_15[4]
+    SLICE_X22Y20         LUT3 (Prop_lut3_I2_O)        0.146    26.629 r  u_core/r1/u_s/g_sb[11].u_sb/dout[63]_i_23/O
+                         net (fo=4, routed)           1.111    27.740    u_core/r10/m[8]
+    SLICE_X24Y18         LUT5 (Prop_lut5_I2_O)        0.328    28.068 r  u_core/r10/dout[59]_i_7/O
+                         net (fo=3, routed)           1.205    29.273    u_core/r1/u_s/g_sb[7].u_sb/a_16[6]
+    SLICE_X26Y13         LUT3 (Prop_lut3_I2_O)        0.153    29.426 r  u_core/r1/u_s/g_sb[7].u_sb/dout[55]_i_3/O
+                         net (fo=4, routed)           1.088    30.514    u_core/r1/u_s/g_sb[3].u_sb/dout_reg[60][1]
+    SLICE_X32Y13         LUT6 (Prop_lut6_I2_O)        0.331    30.845 r  u_core/r1/u_s/g_sb[3].u_sb/dout[55]_i_1/O
+                         net (fo=1, routed)           0.000    30.845    dout0[55]
+    SLICE_X32Y13         FDRE                                         r  dout_reg[55]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.490    41.490    clk
+    SLICE_X32Y13         FDRE                                         r  dout_reg[55]/C
+                         clock pessimism              0.115    41.605    
+                         clock uncertainty           -0.035    41.570    
+    SLICE_X32Y13         FDRE (Setup_fdre_C_D)        0.079    41.649    dout_reg[55]
+  -------------------------------------------------------------------
+                         required time                         41.649    
+                         arrival time                         -30.845    
+  -------------------------------------------------------------------
+                         slack                                 10.804    
+
+Slack (MET) :             10.810ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[54]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        29.091ns  (logic 5.950ns (20.453%)  route 23.141ns (79.547%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.141ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.490ns = ( 41.490 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.106    18.629    u_core/r6/m[45]
+    SLICE_X16Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.960 r  u_core/r6/dout[63]_i_462/O
+                         net (fo=3, routed)           0.950    19.910    u_core/r1/u_s/g_sb[7].u_sb/a[16]
+    SLICE_X13Y14         LUT3 (Prop_lut3_I1_O)        0.152    20.062 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_391/O
+                         net (fo=4, routed)           0.840    20.902    u_core/r7/m[44]
+    SLICE_X13Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.234 r  u_core/r7/dout[63]_i_311/O
+                         net (fo=3, routed)           0.947    22.181    u_core/r1/u_s/g_sb[15].u_sb/a_13[18]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I1_O)        0.150    22.331 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_222/O
+                         net (fo=4, routed)           0.875    23.206    u_core/r8/m[42]
+    SLICE_X14Y18         LUT5 (Prop_lut5_I1_O)        0.348    23.554 r  u_core/r8/dout[63]_i_151/O
+                         net (fo=3, routed)           0.776    24.330    u_core/r1/u_s/g_sb[3].u_sb/a_14[13]
+    SLICE_X15Y19         LUT3 (Prop_lut3_I1_O)        0.124    24.454 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_111/O
+                         net (fo=4, routed)           1.043    25.498    u_core/r9/m[25]
+    SLICE_X22Y20         LUT5 (Prop_lut5_I2_O)        0.124    25.622 r  u_core/r9/dout[63]_i_51/O
+                         net (fo=3, routed)           0.862    26.483    u_core/r1/u_s/g_sb[11].u_sb/a_15[4]
+    SLICE_X22Y20         LUT3 (Prop_lut3_I2_O)        0.146    26.629 r  u_core/r1/u_s/g_sb[11].u_sb/dout[63]_i_23/O
+                         net (fo=4, routed)           1.111    27.740    u_core/r10/m[8]
+    SLICE_X24Y18         LUT5 (Prop_lut5_I2_O)        0.328    28.068 r  u_core/r10/dout[59]_i_7/O
+                         net (fo=3, routed)           1.205    29.273    u_core/r1/u_s/g_sb[7].u_sb/a_16[6]
+    SLICE_X26Y13         LUT3 (Prop_lut3_I2_O)        0.153    29.426 r  u_core/r1/u_s/g_sb[7].u_sb/dout[55]_i_3/O
+                         net (fo=4, routed)           1.080    30.506    u_core/r1/u_s/g_sb[3].u_sb/dout_reg[60][1]
+    SLICE_X32Y14         LUT6 (Prop_lut6_I2_O)        0.331    30.837 r  u_core/r1/u_s/g_sb[3].u_sb/dout[54]_i_1/O
+                         net (fo=1, routed)           0.000    30.837    dout0[54]
+    SLICE_X32Y14         FDRE                                         r  dout_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.490    41.490    clk
+    SLICE_X32Y14         FDRE                                         r  dout_reg[54]/C
+                         clock pessimism              0.115    41.605    
+                         clock uncertainty           -0.035    41.570    
+    SLICE_X32Y14         FDRE (Setup_fdre_C_D)        0.077    41.647    dout_reg[54]
+  -------------------------------------------------------------------
+                         required time                         41.647    
+                         arrival time                         -30.837    
+  -------------------------------------------------------------------
+                         slack                                 10.810    
+
+Slack (MET) :             10.989ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[40]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        28.908ns  (logic 5.690ns (19.683%)  route 23.218ns (80.317%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.144ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.487ns = ( 41.487 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           1.005    16.136    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.464 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_545/O
+                         net (fo=3, routed)           0.811    17.275    u_core/r1/u_s/g_sb[3].u_sb/s_12[12]
+    SLICE_X15Y12         LUT3 (Prop_lut3_I0_O)        0.152    17.427 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_507/O
+                         net (fo=4, routed)           0.721    18.148    u_core/r6/m[40]
+    SLICE_X16Y13         LUT5 (Prop_lut5_I1_O)        0.332    18.480 r  u_core/r6/dout[63]_i_456/O
+                         net (fo=3, routed)           1.315    19.795    u_core/r1/u_s/g_sb[15].u_sb/a[16]
+    SLICE_X11Y15         LUT3 (Prop_lut3_I2_O)        0.150    19.945 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_400/O
+                         net (fo=4, routed)           0.963    20.908    u_core/r7/m[16]
+    SLICE_X11Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.240 r  u_core/r7/dout[63]_i_334/O
+                         net (fo=3, routed)           0.985    22.225    u_core/r1/u_s/g_sb[11].u_sb/a_13[10]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I0_O)        0.124    22.349 r  u_core/r1/u_s/g_sb[11].u_sb/dout[63]_i_238/O
+                         net (fo=4, routed)           0.976    23.325    u_core/r8/m[46]
+    SLICE_X15Y20         LUT5 (Prop_lut5_I1_O)        0.124    23.449 r  u_core/r8/dout[63]_i_162/O
+                         net (fo=3, routed)           1.117    24.567    u_core/r1/u_s/g_sb[15].u_sb/a_14[17]
+    SLICE_X20Y21         LUT3 (Prop_lut3_I1_O)        0.146    24.713 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_131/O
+                         net (fo=4, routed)           0.846    25.558    u_core/r9/m[33]
+    SLICE_X21Y19         LUT5 (Prop_lut5_I2_O)        0.328    25.886 r  u_core/r9/dout[63]_i_70/O
+                         net (fo=3, routed)           0.920    26.806    u_core/r1/u_s/g_sb[15].u_sb/a_15[17]
+    SLICE_X23Y17         LUT3 (Prop_lut3_I0_O)        0.124    26.930 r  u_core/r1/u_s/g_sb[15].u_sb/dout[47]_i_26/O
+                         net (fo=4, routed)           1.226    28.156    u_core/r10/m[57]
+    SLICE_X27Y18         LUT5 (Prop_lut5_I1_O)        0.124    28.280 r  u_core/r10/dout[47]_i_8/O
+                         net (fo=3, routed)           0.747    29.027    u_core/r1/u_s/g_sb[7].u_sb/a_16[23]
+    SLICE_X28Y18         LUT3 (Prop_lut3_I2_O)        0.150    29.177 r  u_core/r1/u_s/g_sb[7].u_sb/dout[43]_i_2/O
+                         net (fo=4, routed)           1.152    30.328    u_core/r1/u_s/g_sb[7].u_sb/r10/m[43]
+    SLICE_X32Y17         LUT6 (Prop_lut6_I1_O)        0.326    30.654 r  u_core/r1/u_s/g_sb[7].u_sb/dout[40]_i_1/O
+                         net (fo=1, routed)           0.000    30.654    dout0[40]
+    SLICE_X32Y17         FDRE                                         r  dout_reg[40]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.487    41.487    clk
+    SLICE_X32Y17         FDRE                                         r  dout_reg[40]/C
+                         clock pessimism              0.115    41.602    
+                         clock uncertainty           -0.035    41.567    
+    SLICE_X32Y17         FDRE (Setup_fdre_C_D)        0.077    41.644    dout_reg[40]
+  -------------------------------------------------------------------
+                         required time                         41.644    
+                         arrival time                         -30.654    
+  -------------------------------------------------------------------
+                         slack                                 10.989    
+
+Slack (MET) :             11.097ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[61]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        28.833ns  (logic 6.188ns (21.461%)  route 22.645ns (78.539%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.566ns = ( 41.566 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.106    18.629    u_core/r6/m[45]
+    SLICE_X16Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.960 r  u_core/r6/dout[63]_i_462/O
+                         net (fo=3, routed)           0.950    19.910    u_core/r1/u_s/g_sb[7].u_sb/a[16]
+    SLICE_X13Y14         LUT3 (Prop_lut3_I1_O)        0.152    20.062 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_391/O
+                         net (fo=4, routed)           0.840    20.902    u_core/r7/m[44]
+    SLICE_X13Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.234 r  u_core/r7/dout[63]_i_311/O
+                         net (fo=3, routed)           0.947    22.181    u_core/r1/u_s/g_sb[15].u_sb/a_13[18]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I1_O)        0.150    22.331 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_222/O
+                         net (fo=4, routed)           0.875    23.206    u_core/r8/m[42]
+    SLICE_X14Y18         LUT5 (Prop_lut5_I1_O)        0.348    23.554 r  u_core/r8/dout[63]_i_151/O
+                         net (fo=3, routed)           0.776    24.330    u_core/r1/u_s/g_sb[3].u_sb/a_14[13]
+    SLICE_X15Y19         LUT3 (Prop_lut3_I2_O)        0.150    24.480 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_83/O
+                         net (fo=4, routed)           1.233    25.713    u_core/r9/m[17]
+    SLICE_X25Y19         LUT5 (Prop_lut5_I1_O)        0.326    26.039 r  u_core/r9/dout[63]_i_40/O
+                         net (fo=3, routed)           1.007    27.046    u_core/r1/u_s/g_sb[3].u_sb/a_15[10]
+    SLICE_X25Y20         LUT3 (Prop_lut3_I0_O)        0.152    27.198 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_20/O
+                         net (fo=4, routed)           0.851    28.049    u_core/r10/m[34]
+    SLICE_X24Y19         LUT5 (Prop_lut5_I1_O)        0.332    28.381 r  u_core/r10/dout[63]_i_15/O
+                         net (fo=3, routed)           0.996    29.377    u_core/r1/u_s/g_sb[3].u_sb/a_16[17]
+    SLICE_X24Y13         LUT3 (Prop_lut3_I0_O)        0.152    29.529 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_5/O
+                         net (fo=4, routed)           0.718    30.247    u_core/r1/u_s/g_sb[3].u_sb/r10/m[61]
+    SLICE_X31Y13         LUT6 (Prop_lut6_I3_O)        0.332    30.579 r  u_core/r1/u_s/g_sb[3].u_sb/dout[61]_i_1/O
+                         net (fo=1, routed)           0.000    30.579    dout0[61]
+    SLICE_X31Y13         FDRE                                         r  dout_reg[61]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.566    41.566    clk
+    SLICE_X31Y13         FDRE                                         r  dout_reg[61]/C
+                         clock pessimism              0.115    41.681    
+                         clock uncertainty           -0.035    41.646    
+    SLICE_X31Y13         FDRE (Setup_fdre_C_D)        0.031    41.677    dout_reg[61]
+  -------------------------------------------------------------------
+                         required time                         41.677    
+                         arrival time                         -30.579    
+  -------------------------------------------------------------------
+                         slack                                 11.097    
+
+Slack (MET) :             11.122ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[41]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        28.779ns  (logic 5.690ns (19.771%)  route 23.089ns (80.229%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.144ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.487ns = ( 41.487 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           1.005    16.136    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.464 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_545/O
+                         net (fo=3, routed)           0.811    17.275    u_core/r1/u_s/g_sb[3].u_sb/s_12[12]
+    SLICE_X15Y12         LUT3 (Prop_lut3_I0_O)        0.152    17.427 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_507/O
+                         net (fo=4, routed)           0.721    18.148    u_core/r6/m[40]
+    SLICE_X16Y13         LUT5 (Prop_lut5_I1_O)        0.332    18.480 r  u_core/r6/dout[63]_i_456/O
+                         net (fo=3, routed)           1.315    19.795    u_core/r1/u_s/g_sb[15].u_sb/a[16]
+    SLICE_X11Y15         LUT3 (Prop_lut3_I2_O)        0.150    19.945 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_400/O
+                         net (fo=4, routed)           0.963    20.908    u_core/r7/m[16]
+    SLICE_X11Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.240 r  u_core/r7/dout[63]_i_334/O
+                         net (fo=3, routed)           0.985    22.225    u_core/r1/u_s/g_sb[11].u_sb/a_13[10]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I0_O)        0.124    22.349 r  u_core/r1/u_s/g_sb[11].u_sb/dout[63]_i_238/O
+                         net (fo=4, routed)           0.976    23.325    u_core/r8/m[46]
+    SLICE_X15Y20         LUT5 (Prop_lut5_I1_O)        0.124    23.449 r  u_core/r8/dout[63]_i_162/O
+                         net (fo=3, routed)           1.117    24.567    u_core/r1/u_s/g_sb[15].u_sb/a_14[17]
+    SLICE_X20Y21         LUT3 (Prop_lut3_I1_O)        0.146    24.713 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_131/O
+                         net (fo=4, routed)           0.846    25.558    u_core/r9/m[33]
+    SLICE_X21Y19         LUT5 (Prop_lut5_I2_O)        0.328    25.886 r  u_core/r9/dout[63]_i_70/O
+                         net (fo=3, routed)           0.920    26.806    u_core/r1/u_s/g_sb[15].u_sb/a_15[17]
+    SLICE_X23Y17         LUT3 (Prop_lut3_I0_O)        0.124    26.930 r  u_core/r1/u_s/g_sb[15].u_sb/dout[47]_i_26/O
+                         net (fo=4, routed)           1.226    28.156    u_core/r10/m[57]
+    SLICE_X27Y18         LUT5 (Prop_lut5_I1_O)        0.124    28.280 r  u_core/r10/dout[47]_i_8/O
+                         net (fo=3, routed)           0.747    29.027    u_core/r1/u_s/g_sb[7].u_sb/a_16[23]
+    SLICE_X28Y18         LUT3 (Prop_lut3_I2_O)        0.150    29.177 r  u_core/r1/u_s/g_sb[7].u_sb/dout[43]_i_2/O
+                         net (fo=4, routed)           1.023    30.199    u_core/r1/u_s/g_sb[7].u_sb/r10/m[43]
+    SLICE_X32Y17         LUT6 (Prop_lut6_I1_O)        0.326    30.525 r  u_core/r1/u_s/g_sb[7].u_sb/dout[41]_i_1/O
+                         net (fo=1, routed)           0.000    30.525    dout0[41]
+    SLICE_X32Y17         FDRE                                         r  dout_reg[41]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.487    41.487    clk
+    SLICE_X32Y17         FDRE                                         r  dout_reg[41]/C
+                         clock pessimism              0.115    41.602    
+                         clock uncertainty           -0.035    41.567    
+    SLICE_X32Y17         FDRE (Setup_fdre_C_D)        0.081    41.648    dout_reg[41]
+  -------------------------------------------------------------------
+                         required time                         41.648    
+                         arrival time                         -30.525    
+  -------------------------------------------------------------------
+                         slack                                 11.122    
+
+Slack (MET) :             11.149ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        28.775ns  (logic 5.973ns (20.757%)  route 22.802ns (79.243%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.071ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.560ns = ( 41.560 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.106    18.629    u_core/r6/m[45]
+    SLICE_X16Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.960 r  u_core/r6/dout[63]_i_462/O
+                         net (fo=3, routed)           0.950    19.910    u_core/r1/u_s/g_sb[7].u_sb/a[16]
+    SLICE_X13Y14         LUT3 (Prop_lut3_I1_O)        0.152    20.062 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_391/O
+                         net (fo=4, routed)           0.840    20.902    u_core/r7/m[44]
+    SLICE_X13Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.234 r  u_core/r7/dout[63]_i_311/O
+                         net (fo=3, routed)           0.947    22.181    u_core/r1/u_s/g_sb[15].u_sb/a_13[18]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I1_O)        0.150    22.331 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_222/O
+                         net (fo=4, routed)           0.875    23.206    u_core/r8/m[42]
+    SLICE_X14Y18         LUT5 (Prop_lut5_I1_O)        0.348    23.554 r  u_core/r8/dout[63]_i_151/O
+                         net (fo=3, routed)           0.776    24.330    u_core/r1/u_s/g_sb[3].u_sb/a_14[13]
+    SLICE_X15Y19         LUT3 (Prop_lut3_I1_O)        0.124    24.454 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_111/O
+                         net (fo=4, routed)           1.043    25.498    u_core/r9/m[25]
+    SLICE_X22Y20         LUT5 (Prop_lut5_I2_O)        0.124    25.622 r  u_core/r9/dout[63]_i_51/O
+                         net (fo=3, routed)           0.854    26.475    u_core/r1/u_s/g_sb[15].u_sb/a_15[12]
+    SLICE_X22Y20         LUT3 (Prop_lut3_I2_O)        0.152    26.627 r  u_core/r1/u_s/g_sb[15].u_sb/dout[15]_i_31/O
+                         net (fo=4, routed)           1.073    27.700    u_core/r10/m[12]
+    SLICE_X24Y22         LUT5 (Prop_lut5_I2_O)        0.348    28.048 r  u_core/r10/dout[11]_i_6/O
+                         net (fo=3, routed)           1.158    29.206    u_core/r1/u_s/g_sb[3].u_sb/a_16[7]
+    SLICE_X28Y20         LUT3 (Prop_lut3_I1_O)        0.154    29.360 r  u_core/r1/u_s/g_sb[3].u_sb/dout[11]_i_2/O
+                         net (fo=4, routed)           0.834    30.194    u_core/r1/u_s/g_sb[15].u_sb/dout_reg[12][2]
+    SLICE_X29Y19         LUT6 (Prop_lut6_I1_O)        0.327    30.521 r  u_core/r1/u_s/g_sb[15].u_sb/dout[9]_i_1/O
+                         net (fo=1, routed)           0.000    30.521    dout0[9]
+    SLICE_X29Y19         FDRE                                         r  dout_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.560    41.560    clk
+    SLICE_X29Y19         FDRE                                         r  dout_reg[9]/C
+                         clock pessimism              0.115    41.675    
+                         clock uncertainty           -0.035    41.640    
+    SLICE_X29Y19         FDRE (Setup_fdre_C_D)        0.031    41.671    dout_reg[9]
+  -------------------------------------------------------------------
+                         required time                         41.671    
+                         arrival time                         -30.521    
+  -------------------------------------------------------------------
+                         slack                                 11.149    
+
+Slack (MET) :             11.151ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[56]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        28.778ns  (logic 5.952ns (20.682%)  route 22.826ns (79.318%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.567ns = ( 41.567 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.106    18.629    u_core/r6/m[45]
+    SLICE_X16Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.960 r  u_core/r6/dout[63]_i_462/O
+                         net (fo=3, routed)           0.950    19.910    u_core/r1/u_s/g_sb[7].u_sb/a[16]
+    SLICE_X13Y14         LUT3 (Prop_lut3_I1_O)        0.152    20.062 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_391/O
+                         net (fo=4, routed)           0.840    20.902    u_core/r7/m[44]
+    SLICE_X13Y16         LUT5 (Prop_lut5_I2_O)        0.332    21.234 r  u_core/r7/dout[63]_i_311/O
+                         net (fo=3, routed)           0.947    22.181    u_core/r1/u_s/g_sb[15].u_sb/a_13[18]
+    SLICE_X12Y18         LUT3 (Prop_lut3_I1_O)        0.150    22.331 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_222/O
+                         net (fo=4, routed)           0.875    23.206    u_core/r8/m[42]
+    SLICE_X14Y18         LUT5 (Prop_lut5_I1_O)        0.348    23.554 r  u_core/r8/dout[63]_i_151/O
+                         net (fo=3, routed)           0.776    24.330    u_core/r1/u_s/g_sb[3].u_sb/a_14[13]
+    SLICE_X15Y19         LUT3 (Prop_lut3_I2_O)        0.150    24.480 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_83/O
+                         net (fo=4, routed)           1.233    25.713    u_core/r9/m[17]
+    SLICE_X25Y19         LUT5 (Prop_lut5_I1_O)        0.326    26.039 r  u_core/r9/dout[63]_i_40/O
+                         net (fo=3, routed)           1.007    27.046    u_core/r1/u_s/g_sb[3].u_sb/a_15[10]
+    SLICE_X25Y20         LUT3 (Prop_lut3_I0_O)        0.152    27.198 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_20/O
+                         net (fo=4, routed)           0.851    28.049    u_core/r10/m[34]
+    SLICE_X24Y19         LUT5 (Prop_lut5_I1_O)        0.332    28.381 r  u_core/r10/dout[63]_i_15/O
+                         net (fo=3, routed)           1.125    29.506    u_core/r1/u_s/g_sb[3].u_sb/a_16[17]
+    SLICE_X24Y13         LUT3 (Prop_lut3_I0_O)        0.124    29.630 r  u_core/r1/u_s/g_sb[3].u_sb/dout[59]_i_5/O
+                         net (fo=4, routed)           0.770    30.400    u_core/r1/u_s/g_sb[3].u_sb/r10/m[57]
+    SLICE_X28Y12         LUT6 (Prop_lut6_I3_O)        0.124    30.524 r  u_core/r1/u_s/g_sb[3].u_sb/dout[56]_i_1/O
+                         net (fo=1, routed)           0.000    30.524    dout0[56]
+    SLICE_X28Y12         FDRE                                         r  dout_reg[56]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.567    41.567    clk
+    SLICE_X28Y12         FDRE                                         r  dout_reg[56]/C
+                         clock pessimism              0.115    41.682    
+                         clock uncertainty           -0.035    41.647    
+    SLICE_X28Y12         FDRE (Setup_fdre_C_D)        0.029    41.676    dout_reg[56]
+  -------------------------------------------------------------------
+                         required time                         41.676    
+                         arrival time                         -30.524    
+  -------------------------------------------------------------------
+                         slack                                 11.151    
+
+Slack (MET) :             11.152ns  (required time - arrival time)
+  Source:                 kc_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk rise@40.000ns - clk rise@0.000ns)
+  Data Path Delay:        28.769ns  (logic 5.926ns (20.598%)  route 22.843ns (79.402%))
+  Logic Levels:           24  (LUT3=12 LUT5=5 LUT6=7)
+  Clock Path Skew:        -0.072ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.559ns = ( 41.559 - 40.000 ) 
+    Source Clock Delay      (SCD):    1.746ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          1.746     1.746    clk
+    SLICE_X25Y11         FDRE                                         r  kc_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y11         FDRE (Prop_fdre_C_Q)         0.419     2.165 r  kc_r_reg[4]/Q
+                         net (fo=27, routed)          1.127     3.292    u_core/r10/kc_r[4]
+    SLICE_X24Y23         LUT3 (Prop_lut3_I0_O)        0.299     3.591 f  u_core/r10/dout[63]_i_1246/O
+                         net (fo=4, routed)           0.603     4.193    u_core/r1/u_s/g_sb[14].u_sb/s0[0]
+    SLICE_X25Y22         LUT6 (Prop_lut6_I3_O)        0.124     4.317 r  u_core/r1/u_s/g_sb[14].u_sb/dout[63]_i_1182/O
+                         net (fo=3, routed)           0.983     5.300    u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1096[3]
+    SLICE_X27Y17         LUT3 (Prop_lut3_I2_O)        0.150     5.450 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1167/O
+                         net (fo=4, routed)           0.890     6.340    u_core/r2/u_s/g_sb[3].u_sb/m[1]
+    SLICE_X25Y14         LUT6 (Prop_lut6_I1_O)        0.326     6.666 r  u_core/r2/u_s/g_sb[3].u_sb/dout[63]_i_1087/O
+                         net (fo=3, routed)           1.150     7.816    u_core/r1/u_s/g_sb[15].u_sb/s[12]
+    SLICE_X25Y7          LUT3 (Prop_lut3_I0_O)        0.152     7.968 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_1019/O
+                         net (fo=4, routed)           1.247     9.215    u_core/r3/u_s/g_sb[10].u_sb/m[0]
+    SLICE_X21Y5          LUT6 (Prop_lut6_I2_O)        0.332     9.547 r  u_core/r3/u_s/g_sb[10].u_sb/dout[63]_i_940/O
+                         net (fo=3, routed)           0.668    10.215    u_core/r1/u_s/g_sb[3].u_sb/s_9[19]
+    SLICE_X20Y4          LUT3 (Prop_lut3_I2_O)        0.150    10.365 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_858/O
+                         net (fo=4, routed)           1.332    11.697    u_core/r4/u_s/g_sb[2].u_sb/m[1]
+    SLICE_X11Y2          LUT6 (Prop_lut6_I1_O)        0.348    12.045 r  u_core/r4/u_s/g_sb[2].u_sb/dout[63]_i_788/O
+                         net (fo=3, routed)           0.664    12.709    u_core/r1/u_s/g_sb[7].u_sb/s_10[19]
+    SLICE_X10Y2          LUT3 (Prop_lut3_I2_O)        0.152    12.861 r  u_core/r1/u_s/g_sb[7].u_sb/dout[63]_i_774/O
+                         net (fo=4, routed)           0.852    13.713    u_core/r5/u_s/g_sb[0].u_sb/m[1]
+    SLICE_X10Y4          LUT6 (Prop_lut6_I1_O)        0.348    14.061 r  u_core/r5/u_s/g_sb[0].u_sb/dout[63]_i_695/O
+                         net (fo=3, routed)           0.920    14.981    u_core/r1/u_s/g_sb[3].u_sb/s_11[27]
+    SLICE_X12Y8          LUT3 (Prop_lut3_I1_O)        0.150    15.131 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_610/O
+                         net (fo=4, routed)           0.940    16.071    u_core/mid/u_s/g_sb[7].u_sb/m[1]
+    SLICE_X13Y11         LUT6 (Prop_lut6_I1_O)        0.328    16.399 r  u_core/mid/u_s/g_sb[7].u_sb/dout[63]_i_542/O
+                         net (fo=3, routed)           0.972    17.370    u_core/r1/u_s/g_sb[3].u_sb/s_12[13]
+    SLICE_X16Y12         LUT3 (Prop_lut3_I0_O)        0.153    17.523 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_470/O
+                         net (fo=4, routed)           1.107    18.630    u_core/r6/m[45]
+    SLICE_X17Y14         LUT5 (Prop_lut5_I2_O)        0.331    18.961 r  u_core/r6/dout[63]_i_406/O
+                         net (fo=3, routed)           0.739    19.700    u_core/r1/u_s/g_sb[11].u_sb/a[17]
+    SLICE_X13Y15         LUT3 (Prop_lut3_I1_O)        0.124    19.824 r  u_core/r1/u_s/g_sb[11].u_sb/dout[63]_i_339/O
+                         net (fo=4, routed)           0.972    20.796    u_core/r7/m[37]
+    SLICE_X12Y19         LUT5 (Prop_lut5_I1_O)        0.124    20.920 r  u_core/r7/dout[63]_i_332/O
+                         net (fo=3, routed)           0.987    21.906    u_core/r1/u_s/g_sb[3].u_sb/a_13[14]
+    SLICE_X9Y19          LUT3 (Prop_lut3_I2_O)        0.152    22.058 r  u_core/r1/u_s/g_sb[3].u_sb/dout[63]_i_248/O
+                         net (fo=4, routed)           0.872    22.930    u_core/r8/m[10]
+    SLICE_X10Y18         LUT5 (Prop_lut5_I1_O)        0.326    23.256 r  u_core/r8/dout[63]_i_195/O
+                         net (fo=3, routed)           1.100    24.356    u_core/r1/u_s/g_sb[15].u_sb/a_14[5]
+    SLICE_X19Y18         LUT3 (Prop_lut3_I2_O)        0.150    24.506 r  u_core/r1/u_s/g_sb[15].u_sb/dout[63]_i_99/O
+                         net (fo=4, routed)           0.863    25.368    u_core/r9/m[49]
+    SLICE_X20Y18         LUT5 (Prop_lut5_I2_O)        0.332    25.700 r  u_core/r9/dout[63]_i_46/O
+                         net (fo=3, routed)           1.098    26.798    u_core/r1/u_s/g_sb[11].u_sb/a_15[21]
+    SLICE_X24Y21         LUT3 (Prop_lut3_I0_O)        0.152    26.950 r  u_core/r1/u_s/g_sb[11].u_sb/dout[15]_i_30/O
+                         net (fo=4, routed)           0.621    27.572    u_core/r10/m[13]
+    SLICE_X24Y22         LUT5 (Prop_lut5_I1_O)        0.326    27.898 r  u_core/r10/dout[15]_i_10/O
+                         net (fo=3, routed)           1.128    29.026    u_core/r1/u_s/g_sb[15].u_sb/a_16[2]
+    SLICE_X27Y20         LUT3 (Prop_lut3_I1_O)        0.152    29.178 r  u_core/r1/u_s/g_sb[15].u_sb/dout[3]_i_3/O
+                         net (fo=4, routed)           1.012    30.189    u_core/r1/u_s/g_sb[15].u_sb/r10/m[2]
+    SLICE_X28Y21         LUT6 (Prop_lut6_I2_O)        0.326    30.515 r  u_core/r1/u_s/g_sb[15].u_sb/dout[0]_i_1/O
+                         net (fo=1, routed)           0.000    30.515    dout0[0]
+    SLICE_X28Y21         FDRE                                         r  dout_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       40.000    40.000 r  
+                                                      0.000    40.000 r  clk (IN)
+                         net (fo=321, unset)          1.559    41.559    clk
+    SLICE_X28Y21         FDRE                                         r  dout_reg[0]/C
+                         clock pessimism              0.115    41.674    
+                         clock uncertainty           -0.035    41.639    
+    SLICE_X28Y21         FDRE (Setup_fdre_C_D)        0.029    41.668    dout_reg[0]
+  -------------------------------------------------------------------
+                         required time                         41.668    
+                         arrival time                         -30.515    
+  -------------------------------------------------------------------
+                         slack                                 11.152    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.293ns  (arrival time - required time)
+  Source:                 wpost_r_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.427ns  (logic 0.186ns (43.561%)  route 0.241ns (56.439%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.846ns
+    Source Clock Delay      (SCD):    0.580ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.580     0.580    clk
+    SLICE_X24Y22         FDRE                                         r  wpost_r_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y22         FDRE (Prop_fdre_C_Q)         0.141     0.721 r  wpost_r_reg[7]/Q
+                         net (fo=1, routed)           0.241     0.962    u_core/r1/u_s/g_sb[15].u_sb/wpost_r[7]
+    SLICE_X26Y21         LUT6 (Prop_lut6_I0_O)        0.045     1.007 r  u_core/r1/u_s/g_sb[15].u_sb/dout[7]_i_1/O
+                         net (fo=1, routed)           0.000     1.007    dout0[7]
+    SLICE_X26Y21         FDRE                                         r  dout_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.846     0.846    clk
+    SLICE_X26Y21         FDRE                                         r  dout_reg[7]/C
+                         clock pessimism             -0.253     0.593    
+    SLICE_X26Y21         FDRE (Hold_fdre_C_D)         0.121     0.714    dout_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -0.714    
+                         arrival time                           1.007    
+  -------------------------------------------------------------------
+                         slack                                  0.293    
+
+Slack (MET) :             0.294ns  (arrival time - required time)
+  Source:                 wpost_r_reg[43]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[43]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.428ns  (logic 0.186ns (43.486%)  route 0.242ns (56.514%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.850ns
+    Source Clock Delay      (SCD):    0.584ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.584     0.584    clk
+    SLICE_X29Y16         FDRE                                         r  wpost_r_reg[43]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y16         FDRE (Prop_fdre_C_Q)         0.141     0.725 r  wpost_r_reg[43]/Q
+                         net (fo=1, routed)           0.242     0.967    u_core/r1/u_s/g_sb[7].u_sb/wpost_r[11]
+    SLICE_X30Y17         LUT6 (Prop_lut6_I0_O)        0.045     1.012 r  u_core/r1/u_s/g_sb[7].u_sb/dout[43]_i_1/O
+                         net (fo=1, routed)           0.000     1.012    dout0[43]
+    SLICE_X30Y17         FDRE                                         r  dout_reg[43]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.850     0.850    clk
+    SLICE_X30Y17         FDRE                                         r  dout_reg[43]/C
+                         clock pessimism             -0.253     0.597    
+    SLICE_X30Y17         FDRE (Hold_fdre_C_D)         0.121     0.718    dout_reg[43]
+  -------------------------------------------------------------------
+                         required time                         -0.718    
+                         arrival time                           1.012    
+  -------------------------------------------------------------------
+                         slack                                  0.294    
+
+Slack (MET) :             0.296ns  (arrival time - required time)
+  Source:                 wpost_r_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.401ns  (logic 0.186ns (46.364%)  route 0.215ns (53.636%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.845ns
+    Source Clock Delay      (SCD):    0.579ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.579     0.579    clk
+    SLICE_X29Y22         FDRE                                         r  wpost_r_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y22         FDRE (Prop_fdre_C_Q)         0.141     0.720 r  wpost_r_reg[3]/Q
+                         net (fo=1, routed)           0.215     0.935    u_core/r1/u_s/g_sb[15].u_sb/wpost_r[3]
+    SLICE_X28Y21         LUT6 (Prop_lut6_I0_O)        0.045     0.980 r  u_core/r1/u_s/g_sb[15].u_sb/dout[3]_i_1/O
+                         net (fo=1, routed)           0.000     0.980    dout0[3]
+    SLICE_X28Y21         FDRE                                         r  dout_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.845     0.845    clk
+    SLICE_X28Y21         FDRE                                         r  dout_reg[3]/C
+                         clock pessimism             -0.253     0.592    
+    SLICE_X28Y21         FDRE (Hold_fdre_C_D)         0.092     0.684    dout_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -0.684    
+                         arrival time                           0.980    
+  -------------------------------------------------------------------
+                         slack                                  0.296    
+
+Slack (MET) :             0.302ns  (arrival time - required time)
+  Source:                 wpost_r_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.407ns  (logic 0.186ns (45.675%)  route 0.221ns (54.325%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.845ns
+    Source Clock Delay      (SCD):    0.579ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.579     0.579    clk
+    SLICE_X29Y22         FDRE                                         r  wpost_r_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y22         FDRE (Prop_fdre_C_Q)         0.141     0.720 r  wpost_r_reg[2]/Q
+                         net (fo=1, routed)           0.221     0.941    u_core/r1/u_s/g_sb[15].u_sb/wpost_r[2]
+    SLICE_X28Y21         LUT6 (Prop_lut6_I0_O)        0.045     0.986 r  u_core/r1/u_s/g_sb[15].u_sb/dout[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.986    dout0[2]
+    SLICE_X28Y21         FDRE                                         r  dout_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.845     0.845    clk
+    SLICE_X28Y21         FDRE                                         r  dout_reg[2]/C
+                         clock pessimism             -0.253     0.592    
+    SLICE_X28Y21         FDRE (Hold_fdre_C_D)         0.092     0.684    dout_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -0.684    
+                         arrival time                           0.986    
+  -------------------------------------------------------------------
+                         slack                                  0.302    
+
+Slack (MET) :             0.305ns  (arrival time - required time)
+  Source:                 kc_r_reg[39]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[39]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.439ns  (logic 0.186ns (42.352%)  route 0.253ns (57.648%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.850ns
+    Source Clock Delay      (SCD):    0.584ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.584     0.584    clk
+    SLICE_X29Y16         FDRE                                         r  kc_r_reg[39]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y16         FDRE (Prop_fdre_C_Q)         0.141     0.725 r  kc_r_reg[39]/Q
+                         net (fo=30, routed)          0.253     0.978    u_core/r1/u_s/g_sb[7].u_sb/kc_r[23]
+    SLICE_X30Y17         LUT6 (Prop_lut6_I5_O)        0.045     1.023 r  u_core/r1/u_s/g_sb[7].u_sb/dout[39]_i_1/O
+                         net (fo=1, routed)           0.000     1.023    dout0[39]
+    SLICE_X30Y17         FDRE                                         r  dout_reg[39]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.850     0.850    clk
+    SLICE_X30Y17         FDRE                                         r  dout_reg[39]/C
+                         clock pessimism             -0.253     0.597    
+    SLICE_X30Y17         FDRE (Hold_fdre_C_D)         0.121     0.718    dout_reg[39]
+  -------------------------------------------------------------------
+                         required time                         -0.718    
+                         arrival time                           1.023    
+  -------------------------------------------------------------------
+                         slack                                  0.305    
+
+Slack (MET) :             0.321ns  (arrival time - required time)
+  Source:                 wpost_r_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.455ns  (logic 0.186ns (40.864%)  route 0.269ns (59.136%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.846ns
+    Source Clock Delay      (SCD):    0.580ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.580     0.580    clk
+    SLICE_X25Y22         FDRE                                         r  wpost_r_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y22         FDRE (Prop_fdre_C_Q)         0.141     0.721 r  wpost_r_reg[5]/Q
+                         net (fo=1, routed)           0.269     0.990    u_core/r1/u_s/g_sb[15].u_sb/wpost_r[5]
+    SLICE_X26Y21         LUT6 (Prop_lut6_I0_O)        0.045     1.035 r  u_core/r1/u_s/g_sb[15].u_sb/dout[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.035    dout0[5]
+    SLICE_X26Y21         FDRE                                         r  dout_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.846     0.846    clk
+    SLICE_X26Y21         FDRE                                         r  dout_reg[5]/C
+                         clock pessimism             -0.253     0.593    
+    SLICE_X26Y21         FDRE (Hold_fdre_C_D)         0.121     0.714    dout_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -0.714    
+                         arrival time                           1.035    
+  -------------------------------------------------------------------
+                         slack                                  0.321    
+
+Slack (MET) :             0.322ns  (arrival time - required time)
+  Source:                 wpost_r_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.427ns  (logic 0.209ns (48.903%)  route 0.218ns (51.097%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.846ns
+    Source Clock Delay      (SCD):    0.580ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.580     0.580    clk
+    SLICE_X26Y22         FDRE                                         r  wpost_r_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y22         FDRE (Prop_fdre_C_Q)         0.164     0.744 r  wpost_r_reg[15]/Q
+                         net (fo=1, routed)           0.218     0.962    u_core/r1/u_s/g_sb[15].u_sb/wpost_r[15]
+    SLICE_X27Y21         LUT6 (Prop_lut6_I0_O)        0.045     1.007 r  u_core/r1/u_s/g_sb[15].u_sb/dout[15]_i_1/O
+                         net (fo=1, routed)           0.000     1.007    dout0[15]
+    SLICE_X27Y21         FDRE                                         r  dout_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.846     0.846    clk
+    SLICE_X27Y21         FDRE                                         r  dout_reg[15]/C
+                         clock pessimism             -0.253     0.593    
+    SLICE_X27Y21         FDRE (Hold_fdre_C_D)         0.092     0.685    dout_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -0.685    
+                         arrival time                           1.007    
+  -------------------------------------------------------------------
+                         slack                                  0.322    
+
+Slack (MET) :             0.330ns  (arrival time - required time)
+  Source:                 wpost_r_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.464ns  (logic 0.186ns (40.071%)  route 0.278ns (59.929%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.846ns
+    Source Clock Delay      (SCD):    0.580ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.580     0.580    clk
+    SLICE_X27Y22         FDRE                                         r  wpost_r_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X27Y22         FDRE (Prop_fdre_C_Q)         0.141     0.721 r  wpost_r_reg[6]/Q
+                         net (fo=1, routed)           0.278     0.999    u_core/r1/u_s/g_sb[15].u_sb/wpost_r[6]
+    SLICE_X26Y21         LUT6 (Prop_lut6_I0_O)        0.045     1.044 r  u_core/r1/u_s/g_sb[15].u_sb/dout[6]_i_1/O
+                         net (fo=1, routed)           0.000     1.044    dout0[6]
+    SLICE_X26Y21         FDRE                                         r  dout_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.846     0.846    clk
+    SLICE_X26Y21         FDRE                                         r  dout_reg[6]/C
+                         clock pessimism             -0.253     0.593    
+    SLICE_X26Y21         FDRE (Hold_fdre_C_D)         0.121     0.714    dout_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -0.714    
+                         arrival time                           1.044    
+  -------------------------------------------------------------------
+                         slack                                  0.330    
+
+Slack (MET) :             0.336ns  (arrival time - required time)
+  Source:                 wpost_r_reg[42]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[42]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.469ns  (logic 0.186ns (39.682%)  route 0.283ns (60.318%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.012ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.850ns
+    Source Clock Delay      (SCD):    0.585ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.585     0.585    clk
+    SLICE_X31Y15         FDRE                                         r  wpost_r_reg[42]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y15         FDRE (Prop_fdre_C_Q)         0.141     0.726 r  wpost_r_reg[42]/Q
+                         net (fo=1, routed)           0.283     1.009    u_core/r1/u_s/g_sb[7].u_sb/wpost_r[10]
+    SLICE_X30Y17         LUT6 (Prop_lut6_I0_O)        0.045     1.054 r  u_core/r1/u_s/g_sb[7].u_sb/dout[42]_i_1/O
+                         net (fo=1, routed)           0.000     1.054    dout0[42]
+    SLICE_X30Y17         FDRE                                         r  dout_reg[42]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.850     0.850    clk
+    SLICE_X30Y17         FDRE                                         r  dout_reg[42]/C
+                         clock pessimism             -0.253     0.597    
+    SLICE_X30Y17         FDRE (Hold_fdre_C_D)         0.121     0.718    dout_reg[42]
+  -------------------------------------------------------------------
+                         required time                         -0.718    
+                         arrival time                           1.054    
+  -------------------------------------------------------------------
+                         slack                                  0.336    
+
+Slack (MET) :             0.338ns  (arrival time - required time)
+  Source:                 wpost_r_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            dout_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.443ns  (logic 0.209ns (47.146%)  route 0.234ns (52.854%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.848ns
+    Source Clock Delay      (SCD):    0.581ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.581     0.581    clk
+    SLICE_X30Y19         FDRE                                         r  wpost_r_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y19         FDRE (Prop_fdre_C_Q)         0.164     0.745 r  wpost_r_reg[11]/Q
+                         net (fo=1, routed)           0.234     0.979    u_core/r1/u_s/g_sb[15].u_sb/wpost_r[11]
+    SLICE_X29Y19         LUT6 (Prop_lut6_I0_O)        0.045     1.024 r  u_core/r1/u_s/g_sb[15].u_sb/dout[11]_i_1/O
+                         net (fo=1, routed)           0.000     1.024    dout0[11]
+    SLICE_X29Y19         FDRE                                         r  dout_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=321, unset)          0.848     0.848    clk
+    SLICE_X29Y19         FDRE                                         r  dout_reg[11]/C
+                         clock pessimism             -0.253     0.595    
+    SLICE_X29Y19         FDRE (Hold_fdre_C_D)         0.091     0.686    dout_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -0.686    
+                         arrival time                           1.024    
+  -------------------------------------------------------------------
+                         slack                                  0.338    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X33Y17  busy_r_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X32Y21  done_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X28Y21  dout_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X28Y19  dout_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X29Y19  dout_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X27Y21  dout_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X27Y21  dout_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X27Y21  dout_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X27Y21  dout_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         40.000      39.000     SLICE_X28Y15  dout_reg[16]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X33Y17  busy_r_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X33Y17  busy_r_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X32Y21  done_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X32Y21  done_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y21  dout_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y21  dout_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y19  dout_reg[10]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y19  dout_reg[10]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X29Y19  dout_reg[11]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X29Y19  dout_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X33Y17  busy_r_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X33Y17  busy_r_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X32Y21  done_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X32Y21  done_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y21  dout_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y21  dout_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y19  dout_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X28Y19  dout_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X29Y19  dout_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X29Y19  dout_reg[11]/C
+
+
+

@@ -1,0 +1,13 @@
+# Vivado generated project and run output (recreate with scripts/create_project.tcl)
+**/vivado_proj/
+**/.Xil/
+*.jou
+*.log
+*.str
+*.backup.*
+**/reports/*.dcp
+**/reports/*.xdc
+webtalk*
+usage_statistics_webtalk.*
+# Python
+__pycache__/
