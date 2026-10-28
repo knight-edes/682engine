@@ -21,7 +21,7 @@ Pass:  Tcl console / vivado.log ends with "ALL TESTS PASSED".
 If you see "could not load vectors_rand.mem", the .mem was not copied into
 vivado_proj/prince_zed.sim/sim_1/behav/xsim/ — copy it there and rerun.
 
-## 3. Timing and utilization (out-of-context)
+## 3. Timing and utilisation (out-of-context)
 Batch: vivado -mode batch -source scripts/synth_ooc.tcl
 Prints "RESULT: WNS = ..." and writes reports/util_routed.rpt,
 reports/timing_routed.rpt, reports/power_routed.rpt.
