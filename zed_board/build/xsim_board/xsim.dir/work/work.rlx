@@ -1,0 +1,14 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_core.v,1793098112,verilog,,C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_mprime.v,,prince_core,,,,,,,,
+C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_mprime.v,1793098112,verilog,,C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_round.v,,prince_mprime,,,,,,,,
+C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_round.v,1793098112,verilog,,C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_sbox.v,,prince_middle;prince_round_fwd;prince_round_inv,,,,,,,,
+C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_s_layer.v,1793098112,verilog,,C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_top.v,,prince_s_layer,,,,,,,,
+C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_sbox.v,1793098112,verilog,,C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_sr.v,,prince_sbox,,,,,,,,
+C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_sr.v,1793098112,verilog,,C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_s_layer.v,,prince_sr,,,,,,,,
+C:/Users/mayan/Desktop/682engine/prince_vivado/prince_vivado/rtl/prince_top.v,1793098112,verilog,,C:/Users/mayan/Desktop/682engine/zed_board/rtl/debounce.v,,prince_top,,,,,,,,
+C:/Users/mayan/Desktop/682engine/zed_board/rtl/debounce.v,1793120019,verilog,,C:/Users/mayan/Desktop/682engine/zed_board/rtl/zed_top.v,,debounce,,,,,,,,
+C:/Users/mayan/Desktop/682engine/zed_board/rtl/zed_top.v,1793120019,verilog,,C:/Users/mayan/Desktop/682engine/zed_board/sim/tb_zed_top.v,,zed_top,,,,,,,,
+C:/Users/mayan/Desktop/682engine/zed_board/sim/tb_zed_top.v,1793120019,verilog,,,,tb_zed_top,,,,,,,,

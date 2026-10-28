@@ -1,0 +1,1 @@
+"tb_zed_top" -s "tb_zed_top_sim" -debug "off" 
