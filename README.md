@@ -1,7 +1,7 @@
 # 682engine
 
 Single-switch PRINCE encrypt/decrypt engine on the ZedBoard (Zynq-7000 XC7Z020-CLG484-1).
-EEC-300 project, Department of Electrical Engineering, IIT Roorkee.
+EEC-682 project, Department of Electrical Engineering, IIT Roorkee.
 
 # PRINCE encrypt/decrypt engine — Vivado flow (ZedBoard, xc7z020clg484-1)
 
